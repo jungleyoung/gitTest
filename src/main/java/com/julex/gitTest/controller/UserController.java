@@ -12,7 +12,7 @@ public class UserController {
     @RequestMapping(value = "test")
     public JSONObject test() {
         JSONObject jsonObject = new JSONObject();
-        jsonObject.put("name", "yang");
+        jsonObject.put("name", "yangjie");
         return jsonObject;
     }
 }
