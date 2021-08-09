@@ -1,2 +1,8 @@
 server:
   port: 8080
+
+# 开发时禁用
+#spring:
+#  thymeleaf:
+#    prefix: classpath:/
+#    cache: false

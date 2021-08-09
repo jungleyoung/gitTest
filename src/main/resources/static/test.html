@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./js/jquery.min.js">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="test()"></button>
+</body>
+<script>
+    function test () {
+        alert('111')
+        $.ajax({
+            type: 'POST',
+            url: "http://127.0.0.1:8080/test",
+            // data:{
+            //     pageNum: pageNum,
+            //     productName: productName,
+            //     type: '1'
+            // },
+            success: function(data){
+                layer.msg('加载成功')
+            },
+            error: function(){
+                $.toast("发送失败", "text")
+            }
+        });
+
+    }
+
+</script>
+</html>
